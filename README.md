@@ -1,3 +1,16 @@
+# Custom Theme
+
+## Palette
+
+- primary: #E46B3F
+- secondary: #F8B75D
+- text:
+  -- primary: #FFFFFF
+  -- secondary: #E46B3F
+- background
+  -- paper: #292A44
+  -- default: #292A44
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
