@@ -2,14 +2,7 @@
 
 ## Palette
 
-- primary: #E46B3F
-- secondary: #F8B75D
-- text:
-  -- primary: #FFFFFF
-  -- secondary: #E46B3F
-- background
-  -- paper: #292A44
-  -- default: #292A44
+color: "#CB4B16"
 
 # Getting Started with Create React App
 

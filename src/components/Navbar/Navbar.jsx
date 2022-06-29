@@ -1,11 +1,14 @@
-// src/components/Hero/Navbar/Navbar.jsx
+// src/components//Navbar/Navbar.jsx
 
 import React from "react";
 
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark bg-dark "
+        style={{ width: "100vw", margin: "0 auto" }}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             Navbar

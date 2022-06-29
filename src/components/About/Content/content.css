@@ -1,0 +1,25 @@
+/* src/components/Content/content.css */
+
+.content-body {
+  width: 70%;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.fab {
+  color: "#CB4B16";
+}
+
+.btn-text {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-body {
+    width: 100%;
+  }
+}

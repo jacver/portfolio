@@ -1,4 +1,4 @@
-// src/components/Hero/AnimatedGreeting/AnimatedGreeting.jsx
+// src/components/About/AnimatedGreeting/AnimatedGreeting.jsx
 
 import React from "react";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -8,21 +8,16 @@ import TypeWriterEffect from "react-typewriter-effect";
 function AnimatedGreeting() {
   return (
     <div style={{ paddingTop: "3rem", margin: "auto 0" }}>
-      <h1
-        style={{ paddingTop: "5rem", margin: "auto 0", fontWeight: "normal" }}
-      >
-        Hello
-      </h1>
       <TypeWriterEffect
         textStyle={{
           fontFamily: "Red Hat Display",
-          color: "red",
+          color: "#CB4B16",
           fontWeight: 500,
           fontSize: "1.5em",
         }}
-        startDelay={2000}
+        startDelay={0}
         hideCursorAfterText
-        cursorColor="red"
+        cursorColor="#CB4B16"
         multiText={["Howdy,", "Guten Tag,", "Hola,", "Привіт,", "Welcome!"]}
         multiTextDelay={1000}
         typeSpeed={100}
