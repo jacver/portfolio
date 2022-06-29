@@ -1,4 +1,4 @@
-// src/components/About/Content/Content.jsx
+// src/components/Introduction/Content/Content.jsx
 
 import React from "react";
 import "./content.css";
