@@ -12,21 +12,26 @@ function ProjectCards() {
       hostedURL: "https://jacver.github.io/01-wedding-website/",
       imageName: "weddingsite.JPG",
       title: "Wedding Site",
-      description: "First project ever! Built for my wedding guests",
+      description:
+        "First project ever! Built for my wedding guests using vanilla Javascript, HTML, & CSS",
+      projectTeam: "Solo",
       tags: ["Javascript", "HTML/CSS"],
     },
     {
       githubURL: "https://github.com/jacver/connect-four",
       hostedURL: "https://jacver.github.io/connect-four/",
       imageName: "connect4.JPG",
+      projectTeam: "Solo",
       title: "Connect 4",
-      description: "A browser clone for the classic game Connect 4",
+      description:
+        "A browser clone for the classic game Connect 4 using vanilla Javascript and DOM-Manipulation",
       tags: ["Javascript", "HTML/CSS"],
     },
     {
       githubURL: "https://github.com/jacver/slope-notes",
       hostedURL: "https://slope-notes.herokuapp.com/resorts",
       imageName: "slopenotes.JPG",
+      projectTeam: "Solo",
       title: "SlopeNotes",
       description:
         "An app to track skiing/snowboarding days at various resorts",
@@ -36,6 +41,7 @@ function ProjectCards() {
       githubURL: "https://github.com/CoreyLongDev/trailblazer-frontend",
       hostedURL: "https://funny-cat-673521.netlify.app/parks",
       imageName: "trailblazers.jpg",
+      projectTeam: "Group",
       title: "Trail Blazers",
       description:
         "Find and learn about national parks & historic sites. Hot Springs and trails not yet implemented",
@@ -61,8 +67,9 @@ function ProjectCards() {
             }}
           >
             {/* PROJECT HEADER */}
-            <div className="card-header" key={i}>
-              {project.title}
+            <div className="card-header card-header-container" key={i}>
+              <p>{project.title}</p>
+              <p>{project.projectTeam}</p>
             </div>
 
             {/* PROJECT LINKS */}
