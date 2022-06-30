@@ -3,7 +3,6 @@
 .about-container {
   display: flex;
   justify-content: space-between;
-  max-height: 10%;
 }
 
 .about-bio-text {
@@ -13,11 +12,12 @@
 .portrait-container {
   display: flex;
   justify-content: center;
+  max-height: 30rem;
 }
 
 .portrait {
   max-width: 100%;
-  max-height: 50%;
+  object-fit: contain;
   margin-bottom: 2rem;
 }
 
@@ -32,6 +32,11 @@
 
   .about-bio-text {
     max-width: 100%;
+  }
+
+  .portrait-container {
+    align-items: center;
+    max-height: none;
   }
 
   .tech-row {
