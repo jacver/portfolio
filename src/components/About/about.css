@@ -23,11 +23,7 @@
 
 .tech-row-container {
   display: flex;
-  justify-content: center;
-}
-
-.tech-row {
-  display: flex;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 600px) {
@@ -44,7 +40,11 @@
     max-height: none;
   }
 
-  .tech-row {
-    flex-direction: column;
+  .tech-row-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.15rem;
   }
 }
