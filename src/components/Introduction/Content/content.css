@@ -10,6 +10,14 @@
   gap: 5%;
 }
 
+.btn i {
+  color: #cb4b16;
+}
+
+.btn:hover i {
+  color: white;
+}
+
 .btn-text {
   margin-left: 5px;
 }
