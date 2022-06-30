@@ -6,6 +6,8 @@ function ContactMe() {
     <div className="contact-container" id="scrollspyContact">
       <h3 className="text-warning">Let's Chat!</h3>
       <p>Please don't hesitate to reach out for anything!</p>
+
+      {/* Button will open mail app to send to gmail */}
       <a href="mailto:jacobvernau@gmail.com">
         <button type="button" className="btn btn-outline-warning">
           <span>

@@ -15,12 +15,12 @@ function AnimatedGreeting() {
           fontWeight: 500,
           fontSize: "2em",
         }}
-        startDelay={0}
+        startDelay={0} // start animation on load
         hideCursorAfterText
         cursorColor="#CB4B16"
-        multiText={["Howdy,", "Guten Tag,", "Hola,", "Привіт,", "Welcome!"]}
+        multiText={["Howdy,", "Guten Tag,", "Hola,", "Привіт,", "Welcome!"]} // words to cycle
         multiTextDelay={1000}
-        typeSpeed={250}
+        typeSpeed={250} // type speed in milliseconds
       />
     </div>
   );

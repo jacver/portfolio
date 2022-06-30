@@ -4,7 +4,7 @@ import AboutBio from "./AboutComponents/AboutBio";
 import AboutPhoto from "./AboutComponents/AboutPhoto";
 import AboutTech from "./AboutComponents/AboutTech";
 
-// this component houses the content of the About section
+// this component calls the content of the About section -- broken down into components below
 
 function About() {
   return (

@@ -2,8 +2,7 @@
 
 import React from "react";
 // This component relies on the react-bootstrap library prebuilt components See Imports Below
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import "./navbar.css";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 function TopNavbar() {
   return (
@@ -13,9 +12,12 @@ function TopNavbar() {
           <Navbar.Brand href="#home">JacVer</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            {/* Do not remove this empty nav list - will realign links from right to left */}
+            {/* vvvv Do not remove this empty nav list - will realign links from right to left vvvvv*/}
             <Nav className="me-auto"></Nav>
-            {/* Do not remove this empty nav list - will realign links from right to left */}
+            {/* ^^^^ Do not remove this empty nav list - will realign links from right to left ^^^^*/}
+
+            {/* START FUNCTIONAL NAV LINKS */}
+            {/* -- scrollspy implemented to scroll to selected HTML element on click */}
             <Nav>
               <li className="nav-item">
                 <a className="nav-link" href="#scrollspyAboutMe">
@@ -38,6 +40,7 @@ function TopNavbar() {
                 </a>
               </li>
 
+              {/* button for resume download */}
               <a
                 href="/resume/Jacob Vernau Resume.pdf"
                 download="Jacob Vernau Resume.pdf"
