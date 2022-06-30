@@ -13,7 +13,7 @@ function AnimatedGreeting() {
           fontFamily: "Red Hat Display",
           color: "#CB4B16",
           fontWeight: 500,
-          fontSize: "1.5em",
+          fontSize: "2em",
         }}
         startDelay={0}
         hideCursorAfterText

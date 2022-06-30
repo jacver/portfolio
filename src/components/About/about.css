@@ -1,0 +1,40 @@
+/* src/components/About/about.css */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  max-height: 10%;
+}
+
+.about-bio-text {
+  max-width: 50%;
+}
+
+.portrait-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  max-width: 100%;
+  max-height: 50%;
+  margin-bottom: 2rem;
+}
+
+.tech-row {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-bio-text {
+    max-width: 100%;
+  }
+
+  .tech-row {
+    flex-direction: column;
+  }
+}
