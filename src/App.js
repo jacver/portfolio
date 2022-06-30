@@ -4,6 +4,7 @@ import * as React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Introduction from "./components/Introduction/Content/Content";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <main>
         <Introduction />
         <About />
+        <Projects />
       </main>
     </div>
   );
