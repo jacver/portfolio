@@ -33,10 +33,7 @@ function Content() {
         >
           <button type="button" className="btn btn-outline-warning">
             <span>
-              <i
-                className="fab fa-linkedin icon-intro"
-                style={{ color: "#CB4B16" }}
-              ></i>
+              <i className="fab fa-linkedin icon-intro"></i>
             </span>
             <span className="btn-text">LinkedIn</span>
           </button>
@@ -49,10 +46,7 @@ function Content() {
         >
           <button type="button" className="btn btn-outline-warning">
             <span>
-              <i
-                className="fab fa-github icon-intro"
-                style={{ color: "#CB4B16" }}
-              ></i>
+              <i className="fab fa-github icon-intro"></i>
             </span>
             <span className="btn-text">Github</span>
           </button>
