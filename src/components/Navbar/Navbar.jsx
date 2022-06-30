@@ -1,90 +1,60 @@
 // src/components//Navbar/Navbar.jsx
 
 import React from "react";
+// This component relies on the react-bootstrap library prebuilt components See Imports Below
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import "./navbar.css";
 
-function Navbar() {
+function TopNavbar() {
   return (
-    <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-dark "
-        style={{ width: "100vw", margin: "0 auto" }}
-      >
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarColor01"
-            aria-controls="navbarColor01"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+    <>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">JacVer</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            {/* Do not remove this empty nav list - will realign links from right to left */}
+            <Nav className="me-auto"></Nav>
+            {/* Do not remove this empty nav list - will realign links from right to left */}
+            <Nav>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyAboutMe">
+                  About Me
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyAboutMeTech">
+                  Tech
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyProjects">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#scrollspyContact">
+                  Contact
+                </a>
+              </li>
 
-          <div
-            className="navbar-collapse collapse show"
-            id="navbarColor01"
-            style={{}}
-          >
-            <ul className="navbar-nav me-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  Home
-                  <span className="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  About
-                </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="/"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div className="dropdown-menu">
-                  <a className="dropdown-item" href="/">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Another action
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Something else here
-                  </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="/">
-                    Separated link
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+              <a
+                href="/resume/Jacob Vernau Resume.pdf"
+                download="Jacob Vernau Resume.pdf"
+              >
+                <button type="button" className="btn btn-outline-warning">
+                  <span>
+                    <i className="fas fa-download"></i>
+                  </span>
+                  <span className="btn-text">Resume</span>
+                </button>
+              </a>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 
-export default Navbar;
+export default TopNavbar;

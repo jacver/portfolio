@@ -9,7 +9,7 @@ import AboutTech from "./AboutComponents/AboutTech";
 function About() {
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="scrollspyAboutMe">
         <AboutBio />
         <AboutPhoto />
       </div>

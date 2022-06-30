@@ -15,7 +15,7 @@ function AboutTech() {
   };
 
   return (
-    <div className="tech-container">
+    <div className="tech-container" id="scrollspyAboutMeTech">
       <h3 className="text-warning tech-header">Tech</h3>
       <div className="tech-row-container">
         <ul>

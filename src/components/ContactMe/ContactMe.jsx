@@ -3,7 +3,7 @@ import "./contactme.css";
 
 function ContactMe() {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="scrollspyContact">
       <h3 className="text-warning">Let's Chat!</h3>
       <p>Please don't hesitate to reach out for anything!</p>
       <a href="mailto:jacobvernau@gmail.com">
