@@ -20,7 +20,7 @@ function AnimatedGreeting() {
         cursorColor="#CB4B16"
         multiText={["Howdy,", "Guten Tag,", "Hola,", "Привіт,", "Welcome!"]}
         multiTextDelay={1000}
-        typeSpeed={100}
+        typeSpeed={250}
       />
     </div>
   );
