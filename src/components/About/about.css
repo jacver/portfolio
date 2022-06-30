@@ -21,6 +21,11 @@
   margin-bottom: 2rem;
 }
 
+.tech-row-container {
+  display: flex;
+  justify-content: center;
+}
+
 .tech-row {
   display: flex;
 }
