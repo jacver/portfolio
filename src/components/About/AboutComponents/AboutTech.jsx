@@ -15,46 +15,44 @@ function AboutTech() {
   };
 
   return (
-    <div className="tech-container">
+    <div className="tech-container" id="scrollspyAboutMeTech">
       <h3 className="text-warning tech-header">Tech</h3>
       <div className="tech-row-container">
-        <div className="tech-row">
-          <ul>
-            {" "}
-            <span className="text-warning"> Languages</span>
-            {tech.languages.map((item, i) => {
-              return <li key={i}>{item}</li>;
-            })}
-          </ul>
-          <ul>
-            {" "}
-            <span className="text-warning"> Databases</span>
-            {tech.databases.map((item, i) => {
-              return <li key={i}>{item}</li>;
-            })}
-          </ul>{" "}
-          <ul>
-            {" "}
-            <span className="text-warning"> Frameworks/Libraries</span>
-            {tech.frameworks.map((item, i) => {
-              return <li key={i}>{item}</li>;
-            })}
-          </ul>
-          <ul>
-            {" "}
-            <span className="text-warning"> Cloud</span>
-            {tech.cloud.map((item, i) => {
-              return <li key={i}>{item}</li>;
-            })}
-          </ul>{" "}
-          <ul>
-            {" "}
-            <span className="text-warning">Other Skills</span>
-            {tech.other.map((item, i) => {
-              return <li key={i}>{item}</li>;
-            })}
-          </ul>
-        </div>
+        <ul>
+          {" "}
+          <span className="text-warning"> Languages</span>
+          {tech.languages.map((item, i) => {
+            return <li key={i}>{item}</li>;
+          })}
+        </ul>
+        <ul>
+          {" "}
+          <span className="text-warning"> Databases</span>
+          {tech.databases.map((item, i) => {
+            return <li key={i}>{item}</li>;
+          })}
+        </ul>{" "}
+        <ul>
+          {" "}
+          <span className="text-warning"> Frameworks/Libraries</span>
+          {tech.frameworks.map((item, i) => {
+            return <li key={i}>{item}</li>;
+          })}
+        </ul>
+        <ul>
+          {" "}
+          <span className="text-warning"> Cloud</span>
+          {tech.cloud.map((item, i) => {
+            return <li key={i}>{item}</li>;
+          })}
+        </ul>{" "}
+        <ul>
+          {" "}
+          <span className="text-warning">Other Skills</span>
+          {tech.other.map((item, i) => {
+            return <li key={i}>{item}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );
