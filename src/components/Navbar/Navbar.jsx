@@ -3,7 +3,6 @@
 import React from "react";
 // This component relies on the react-bootstrap library prebuilt components See Imports Below
 import { Navbar, Container, Nav } from "react-bootstrap";
-import resume from "../../Jacob Vernau Resume.pdf";
 
 function TopNavbar() {
   return (
