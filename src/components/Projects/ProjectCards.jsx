@@ -1,7 +1,8 @@
 // src/components/Projects/ProjectCard.jsx
 
-import React from "react";
 import "./projects.css";
+
+// TO DO - Resolve problem mapping projects array below to dynamically generate these cards. Initially had it working, but the image pathing from public/ did not deploy. Look into ways to move link the images from the src/assets/images directory so cards can be rendered dynamically rather than needing to be hardcoded to allow for image hosting in backgroundImage
 
 function ProjectCards() {
   const projects = [
@@ -10,7 +11,7 @@ function ProjectCards() {
     {
       githubURL: "https://github.com/jacver/01-wedding-website",
       hostedURL: "https://jacver.github.io/01-wedding-website/",
-      imageName: "weddingsite.JPG",
+      imageName: "weddingsite",
       title: "Wedding Site",
       description:
         "First project ever! Built for my wedding guests using vanilla Javascript, HTML, & CSS",
@@ -20,7 +21,7 @@ function ProjectCards() {
     {
       githubURL: "https://github.com/jacver/connect-four",
       hostedURL: "https://jacver.github.io/connect-four/",
-      imageName: "connect4.JPG",
+      imageName: "connect4",
       projectTeam: "Solo",
       title: "Connect 4",
       description:
@@ -30,7 +31,7 @@ function ProjectCards() {
     {
       githubURL: "https://github.com/jacver/slope-notes",
       hostedURL: "https://slope-notes.herokuapp.com/resorts",
-      imageName: "slopenotes.JPG",
+      imageName: "slopenotes",
       projectTeam: "Solo",
       title: "SlopeNotes",
       description:
@@ -40,7 +41,7 @@ function ProjectCards() {
     {
       githubURL: "https://github.com/CoreyLongDev/trailblazer-frontend",
       hostedURL: "https://funny-cat-673521.netlify.app/parks",
-      imageName: "trailblazers.jpg",
+      imageName: "trailblazers",
       projectTeam: "Group",
       title: "Trail Blazers",
       description:
@@ -50,55 +51,187 @@ function ProjectCards() {
   ];
 
   return (
-    // creation of the project card
     <div className="cards-container">
-      {projects.map((project, i) => {
-        return (
-          //   SETTINGS FOR BACKGROUND IMAGE/GRADIENT
-          //   IF BACKGROUND IMAGE NOT RENDERING CROSS-REFERENCE project.imageName with image file name in public directory
-          <div
-            key={i}
-            className="card border-warning mb-3"
-            style={{
-              maxWidth: "20rem",
-              backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(images/projects/${project.imageName})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            {/* PROJECT HEADER */}
-            <div className="card-header card-header-container" key={i}>
-              <p>{project.title}</p>
-              <p>{project.projectTeam}</p>
-            </div>
+      {/* START CARD 1 */}
+      <div
+        className="card border-warning mb-3"
+        style={{
+          maxWidth: "20rem",
+          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/7Tizinw.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* PROJECT HEADER */}
 
-            {/* PROJECT LINKS */}
-            <div className="card-body">
-              <div className="card-links-container">
-                <a href={project.githubURL} target="_blank" rel="noreferrer">
-                  <i className="fab fa-github"></i>
-                </a>
+        <div className="card-header card-header-container">
+          <p>{projects[0].title}</p>
+          <p>{projects[0].projectTeam}</p>
+        </div>
+        {/*  start card body */}
 
-                <a href={project.hostedURL} target="_blank" rel="noreferrer">
-                  <i className="fas fa-external-link-square-alt"></i>
-                </a>
-              </div>
+        {/* card links */}
+        <div className="card-body">
+          <div className="card-links-container">
+            <a href={projects[0].githubURL} target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
 
-              {/* PROJECT DESCRIPTION & TECH TAGS */}
-              <p>{project.description}</p>
-              <div className="tags-container">
-                {projects[i].tags.map((tag, j) => {
-                  return (
-                    <span key={j} className="badge bg-warning card-tags">
-                      {tag}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
+            <a href={projects[0].hostedURL} target="_blank" rel="noreferrer">
+              <i className="fas fa-external-link-square-alt"></i>
+            </a>
           </div>
-        );
-      })}
+
+          {/* PROJECT DESCRIPTION & TECH TAGS */}
+          <p>{projects[0].description}</p>
+          <div className="tags-container">
+            {projects[0].tags.map((tag, j) => {
+              return (
+                <span key={j} className="badge bg-warning card-tags">
+                  {tag}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* end card 1 */}
+      {/* start card 2 */}
+
+      <div
+        className="card border-warning mb-3"
+        style={{
+          maxWidth: "20rem",
+          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/IUL9xsG.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* PROJECT HEADER */}
+        <div className="card-header card-header-container">
+          <p>{projects[1].title}</p>
+          <p>{projects[1].projectTeam}</p>
+        </div>
+
+        {/*  start card body */}
+        {/* card links */}
+        <div className="card-body">
+          <div className="card-links-container">
+            <a href={projects[1].githubURL} target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+
+            <a href={projects[1].hostedURL} target="_blank" rel="noreferrer">
+              <i className="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+
+          {/* PROJECT DESCRIPTION & TECH TAGS */}
+          <p>{projects[1].description}</p>
+          <div className="tags-container">
+            {projects[1].tags.map((tag, j) => {
+              return (
+                <span key={j} className="badge bg-warning card-tags">
+                  {tag}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* end card 2 */}
+      {/* Start card 3 */}
+
+      <div
+        className="card border-warning mb-3"
+        style={{
+          maxWidth: "20rem",
+          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/b4prWbe.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* PROJECT HEADER */}
+        <div className="card-header card-header-container">
+          <p>{projects[2].title}</p>
+          <p>{projects[2].projectTeam}</p>
+        </div>
+
+        {/*  start card body */}
+        {/* card links */}
+        <div className="card-body">
+          <div className="card-links-container">
+            <a href={projects[2].githubURL} target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+
+            <a href={projects[2].hostedURL} target="_blank" rel="noreferrer">
+              <i className="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+
+          {/* PROJECT DESCRIPTION & TECH TAGS */}
+          <p>{projects[2].description}</p>
+          <div className="tags-container">
+            {projects[2].tags.map((tag, j) => {
+              return (
+                <span key={j} className="badge bg-warning card-tags">
+                  {tag}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* end card 3 */}
+      {/* start card 4 */}
+
+      <div
+        className="card border-warning mb-3"
+        style={{
+          maxWidth: "20rem",
+          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/NoSW8oJ.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* PROJECT HEADER */}
+        <div className="card-header card-header-container">
+          <p>{projects[3].title}</p>
+          <p>{projects[3].projectTeam}</p>
+        </div>
+
+        {/*  start card body */}
+        {/* card links */}
+        <div className="card-body">
+          <div className="card-links-container">
+            <a href={projects[3].githubURL} target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+
+            <a href={projects[3].hostedURL} target="_blank" rel="noreferrer">
+              <i className="fas fa-external-link-square-alt"></i>
+            </a>
+          </div>
+
+          {/* PROJECT DESCRIPTION & TECH TAGS */}
+          <p>{projects[3].description}</p>
+          <div className="tags-container">
+            {projects[3].tags.map((tag, j) => {
+              return (
+                <span key={j} className="badge bg-warning card-tags">
+                  {tag}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* end card 4 */}
     </div>
   );
 }
