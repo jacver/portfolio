@@ -30,8 +30,8 @@ function AboutBio() {
         on Udemy in <span className="text-warning">Javacsript, HTML, </span>
         and <span className="text-warning">CSS</span>. I instantly fell in love
         and spent virtually all of my freetime doing the coursework. After a
-        month of that I decided to built my first project from scratch - my
-        wedding. I had a blast building the site and refactoring it as I
+        month of that I decided to build my first project from scratch - our
+        wedding website. I had a blast building the site and refactoring it as I
         learned. In the Winter of 2021, I was still craving more so I enrolled
         in General Assembly's six month{" "}
         <span className="text-warning">software engineering immersive</span>{" "}
