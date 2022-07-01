@@ -61,7 +61,7 @@ function ProjectCards() {
             className="card border-warning mb-3"
             style={{
               maxWidth: "20rem",
-              backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(/images/projects/${project.imageName})`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(images/projects/${project.imageName})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

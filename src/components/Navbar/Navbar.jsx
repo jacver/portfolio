@@ -48,9 +48,7 @@ function TopNavbar() {
 
               {/* button for resume download */}
               <a
-                href={
-                  process.env.PUBLIC_URL + "/resume/Jacob Vernau Resume.pdf"
-                }
+                href="resume/Jacob Vernau Resume.pdf"
                 download="Jacob Vernau Resume.pdf"
               >
                 <button type="button" className="btn btn-outline-warning">
