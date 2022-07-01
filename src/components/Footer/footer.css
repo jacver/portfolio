@@ -1,0 +1,16 @@
+/* src/components/Footer/footer.css */
+
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+.footer-text {
+  color: #cb4b16;
+}
+
+.footer-text:hover {
+  color: white;
+}
