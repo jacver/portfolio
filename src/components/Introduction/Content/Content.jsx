@@ -14,10 +14,11 @@ function Content() {
       {/* biography section */}
 
       <p>
-        A <span className="text-warning">full-stack software engineer</span> and
-        alpine skier. Prior to working with software development, I obtained a
-        Master's Degree in Counseling from Clemson University. Whether I'm
-        working with humans or computers, I've always been passionate about{" "}
+        A <span className="text-warning">full-stack software engineer</span>,
+        mental health counselor, and skiier. Prior to working with software
+        development, I obtained a Master's Degree in Counseling from Clemson
+        University. Whether I'm working with humans or computers, I've always
+        been passionate about{" "}
         <span className="text-warning">solving problems</span> and{" "}
         <span className="text-warning">learning</span> as much as possible.
       </p>
