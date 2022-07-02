@@ -9,7 +9,7 @@ function AboutBio() {
       <p>
         Welcome to my portfolio! My name is Jacob - I'm a software engineer in
         Denver, Colorado. After graduating with my Master's and Educational
-        Specialist degrees from Clemson University I moved to Denver to work in
+        Specialist degrees from Clemson University, I moved to Denver to work in
         K-12 schools as a counselor. I chose counseling so I could solve a wide
         variety of problems as they related to social-emotional health,
         academics, and post-secondary readiness. I loved the unique challenges
@@ -22,9 +22,9 @@ function AboutBio() {
       </p>
       <p>
         My passion for <span className="text-warning">web development</span>{" "}
-        began in the Summer of 2021. I proposed to my then-girlfriend and
-        started to explore template-based services to build our wedding website.
-        As I mocked things up, built them, scrapped them, and did it all again I
+        began in the Summer of 2021. I proposed to my now-wife and started to
+        explore template-based services to build our wedding website. As I
+        mocked things up, built them, scrapped them, and did it all again I
         found myself wondering how everything worked behind the scenes. With
         recommendations from friends in software engineering, I began a course
         on Udemy in <span className="text-warning">Javacsript, HTML, </span>
