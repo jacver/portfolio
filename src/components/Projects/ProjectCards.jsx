@@ -1,6 +1,7 @@
 // src/components/Projects/ProjectCard.jsx
 
 import "./projects.css";
+import Tooltip from "react-bootstrap/esm/Tooltip";
 
 // TO DO - Resolve problem mapping projects array below to dynamically generate these cards. Initially had it working, but the image pathing from public/ did not deploy. Look into ways to move link the images from the src/assets/images directory so cards can be rendered dynamically rather than needing to be hardcoded to allow for image hosting in backgroundImage
 
@@ -15,14 +16,14 @@ function ProjectCards() {
       title: "Wedding Site",
       description:
         "First project ever! Built for my wedding guests using vanilla Javascript, HTML, & CSS",
-      projectTeam: "Solo",
+      projectTeam: "Solo Project",
       tags: ["Javascript", "HTML/CSS"],
     },
     {
       githubURL: "https://github.com/jacver/connect-four",
       hostedURL: "https://jacver.github.io/connect-four/",
       imageName: "connect4",
-      projectTeam: "Solo",
+      projectTeam: "Solo Project",
       title: "Connect 4",
       description:
         "A browser clone for the classic game Connect 4 using vanilla Javascript and DOM-Manipulation",
@@ -32,7 +33,7 @@ function ProjectCards() {
       githubURL: "https://github.com/jacver/slope-notes",
       hostedURL: "https://slope-notes.herokuapp.com/resorts",
       imageName: "slopenotes",
-      projectTeam: "Solo",
+      projectTeam: "Solo Project",
       title: "SlopeNotes",
       description:
         "An app to track skiing/snowboarding days at various resorts",
@@ -42,7 +43,7 @@ function ProjectCards() {
       githubURL: "https://github.com/CoreyLongDev/trailblazer-frontend",
       hostedURL: "https://funny-cat-673521.netlify.app/parks",
       imageName: "trailblazers",
-      projectTeam: "Group",
+      projectTeam: "Group Project",
       title: "Trail Blazers",
       description:
         "Find and learn about national parks & historic sites. Hot Springs and trails not yet implemented",
@@ -66,7 +67,7 @@ function ProjectCards() {
 
         <div className="card-header card-header-container">
           <p>{projects[0].title}</p>
-          <p>{projects[0].projectTeam}</p>
+          <i class="fas fa-user-alt"></i>
         </div>
         {/*  start card body */}
 
@@ -111,7 +112,7 @@ function ProjectCards() {
         {/* PROJECT HEADER */}
         <div className="card-header card-header-container">
           <p>{projects[1].title}</p>
-          <p>{projects[1].projectTeam}</p>
+          <i class="fas fa-user-alt"></i>
         </div>
 
         {/*  start card body */}
@@ -156,7 +157,7 @@ function ProjectCards() {
         {/* PROJECT HEADER */}
         <div className="card-header card-header-container">
           <p>{projects[2].title}</p>
-          <p>{projects[2].projectTeam}</p>
+          <i class="fas fa-user-alt"></i>
         </div>
 
         {/*  start card body */}
@@ -201,7 +202,7 @@ function ProjectCards() {
         {/* PROJECT HEADER */}
         <div className="card-header card-header-container">
           <p>{projects[3].title}</p>
-          <p>{projects[3].projectTeam}</p>
+          <i class="fas fa-users"></i>
         </div>
 
         {/*  start card body */}
