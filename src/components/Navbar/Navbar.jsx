@@ -15,7 +15,7 @@ function TopNavbar() {
         id="scrollspyTop"
       >
         <Container>
-          <Navbar.Brand href="#home">JacVer</Navbar.Brand>
+          <Navbar.Brand href="#home"></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             {/* vvvv Do not remove this empty nav list - will realign links from right to left vvvvv*/}
