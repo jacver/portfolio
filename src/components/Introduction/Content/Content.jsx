@@ -15,7 +15,7 @@ function Content() {
 
       <p>
         A <span className="text-warning">full-stack software engineer</span>,
-        mental health counselor, and skiier. Prior to working with software
+        mental health counselor, and skier. Prior to working with software
         development, I obtained a Master's Degree in Counseling from Clemson
         University. Whether I'm working with humans or computers, I've always
         been passionate about{" "}
