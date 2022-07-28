@@ -53,6 +53,16 @@ function ProjectCards() {
         "Find and learn about national parks & historic sites. Hot Springs and trails not yet implemented",
       tags: ["React", "Express/Node", "API", "Netlify"],
     },
+    {
+      githubURL: "https://github.com/jacver/react-brewing-website",
+      hostedURL: "https://slickdaddysbrewing.com/",
+      imageName: "slickdaddys",
+      imageURL: "https://i.imgur.com/OY33mxg.png",
+      projectTeam: "Solo Project",
+      title: "Slick Daddy's Brewing Co",
+      description: "Full-stack CMS created for a mock brewing company",
+      tags: ["React", "Django", "PostgreSQL", "API", "Bootstrap"],
+    },
   ];
 
   return (
