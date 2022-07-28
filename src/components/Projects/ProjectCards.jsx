@@ -14,6 +14,7 @@ function ProjectCards() {
       hostedURL: "https://jacver.github.io/01-wedding-website/",
       imageName: "weddingsite",
       title: "Wedding Site",
+      imageURL: "https://i.imgur.com/7Tizinw.jpg",
       description:
         "First project ever! Built for my wedding guests using vanilla Javascript, HTML, & CSS",
       projectTeam: "Solo Project",
@@ -23,6 +24,7 @@ function ProjectCards() {
       githubURL: "https://github.com/jacver/connect-four",
       hostedURL: "https://jacver.github.io/connect-four/",
       imageName: "connect4",
+      imageURL: "https://i.imgur.com/IUL9xsG.jpg",
       projectTeam: "Solo Project",
       title: "Connect 4",
       description:
@@ -33,6 +35,7 @@ function ProjectCards() {
       githubURL: "https://github.com/jacver/slope-notes",
       hostedURL: "https://slope-notes.herokuapp.com/resorts",
       imageName: "slopenotes",
+      imageURL: "https://i.imgur.com/b4prWbe.jpg",
       projectTeam: "Solo Project",
       title: "SlopeNotes",
       description:
@@ -43,196 +46,76 @@ function ProjectCards() {
       githubURL: "https://github.com/CoreyLongDev/trailblazer-frontend",
       hostedURL: "https://funny-cat-673521.netlify.app/parks",
       imageName: "trailblazers",
+      imageURL: "https://i.imgur.com/NoSW8oJ.jpg",
       projectTeam: "Group Project",
       title: "Trail Blazers",
       description:
         "Find and learn about national parks & historic sites. Hot Springs and trails not yet implemented",
       tags: ["React", "Express/Node", "API", "Netlify"],
     },
+    {
+      githubURL: "https://github.com/jacver/react-brewing-website",
+      hostedURL: "https://slickdaddysbrewing.com/",
+      imageName: "slickdaddys",
+      imageURL: "https://i.imgur.com/OY33mxg.png",
+      projectTeam: "Solo Project",
+      title: "Slick Daddy's Brewing Co",
+      description: "Full-stack CMS created for a mock brewing company",
+      tags: ["React", "Django", "PostgreSQL", "API", "Bootstrap"],
+    },
   ];
 
   return (
     <div className="cards-container">
-      {/* START CARD 1 */}
-      <div
-        className="card border-warning mb-3"
-        style={{
-          maxWidth: "20rem",
-          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/7Tizinw.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* PROJECT HEADER */}
+      {projects.map((project, idx) => {
+        return (
+          <div key={idx}>
+            <div
+              className="card border-warning mb-3"
+              style={{
+                maxWidth: "20rem",
+                backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(${project.imageURL})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+              key={idx}
+            >
+              {/* PROJECT HEADER */}
 
-        <div className="card-header card-header-container">
-          <p>{projects[0].title}</p>
-          <i class="fas fa-user-alt"></i>
-        </div>
-        {/*  start card body */}
+              <div className="card-header card-header-container">
+                <p>{project.title}</p>
+                <i className="fas fa-user-alt"></i>
+              </div>
+              {/*  start card body */}
 
-        {/* card links */}
-        <div className="card-body">
-          <div className="card-links-container">
-            <a href={projects[0].githubURL} target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
+              {/* card links */}
+              <div className="card-body" style={{ height: "14rem" }}>
+                <div className="card-links-container">
+                  <a href={project.githubURL} target="_blank" rel="noreferrer">
+                    <i className="fab fa-github"></i>
+                  </a>
 
-            <a href={projects[0].hostedURL} target="_blank" rel="noreferrer">
-              <i className="fas fa-external-link-square-alt"></i>
-            </a>
+                  <a href={project.hostedURL} target="_blank" rel="noreferrer">
+                    <i className="fas fa-external-link-square-alt"></i>
+                  </a>
+                </div>
+
+                {/* PROJECT DESCRIPTION & TECH TAGS */}
+                <p>{project.description}</p>
+                <div className="tags-container">
+                  {project.tags.map((tag, j) => {
+                    return (
+                      <span key={j} className="badge bg-warning card-tags">
+                        {tag}
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* PROJECT DESCRIPTION & TECH TAGS */}
-          <p>{projects[0].description}</p>
-          <div className="tags-container">
-            {projects[0].tags.map((tag, j) => {
-              return (
-                <span key={j} className="badge bg-warning card-tags">
-                  {tag}
-                </span>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* end card 1 */}
-      {/* start card 2 */}
-
-      <div
-        className="card border-warning mb-3"
-        style={{
-          maxWidth: "20rem",
-          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/IUL9xsG.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* PROJECT HEADER */}
-        <div className="card-header card-header-container">
-          <p>{projects[1].title}</p>
-          <i class="fas fa-user-alt"></i>
-        </div>
-
-        {/*  start card body */}
-        {/* card links */}
-        <div className="card-body">
-          <div className="card-links-container">
-            <a href={projects[1].githubURL} target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-
-            <a href={projects[1].hostedURL} target="_blank" rel="noreferrer">
-              <i className="fas fa-external-link-square-alt"></i>
-            </a>
-          </div>
-
-          {/* PROJECT DESCRIPTION & TECH TAGS */}
-          <p>{projects[1].description}</p>
-          <div className="tags-container">
-            {projects[1].tags.map((tag, j) => {
-              return (
-                <span key={j} className="badge bg-warning card-tags">
-                  {tag}
-                </span>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* end card 2 */}
-      {/* Start card 3 */}
-
-      <div
-        className="card border-warning mb-3"
-        style={{
-          maxWidth: "20rem",
-          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/b4prWbe.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* PROJECT HEADER */}
-        <div className="card-header card-header-container">
-          <p>{projects[2].title}</p>
-          <i class="fas fa-user-alt"></i>
-        </div>
-
-        {/*  start card body */}
-        {/* card links */}
-        <div className="card-body">
-          <div className="card-links-container">
-            <a href={projects[2].githubURL} target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-
-            <a href={projects[2].hostedURL} target="_blank" rel="noreferrer">
-              <i className="fas fa-external-link-square-alt"></i>
-            </a>
-          </div>
-
-          {/* PROJECT DESCRIPTION & TECH TAGS */}
-          <p>{projects[2].description}</p>
-          <div className="tags-container">
-            {projects[2].tags.map((tag, j) => {
-              return (
-                <span key={j} className="badge bg-warning card-tags">
-                  {tag}
-                </span>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* end card 3 */}
-      {/* start card 4 */}
-
-      <div
-        className="card border-warning mb-3"
-        style={{
-          maxWidth: "20rem",
-          backgroundImage: `linear-gradient(rgba(0,0,0,.6) 0,rgba(0,0,0,.6)), url(https://i.imgur.com/NoSW8oJ.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* PROJECT HEADER */}
-        <div className="card-header card-header-container">
-          <p>{projects[3].title}</p>
-          <i class="fas fa-users"></i>
-        </div>
-
-        {/*  start card body */}
-        {/* card links */}
-        <div className="card-body">
-          <div className="card-links-container">
-            <a href={projects[3].githubURL} target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-
-            <a href={projects[3].hostedURL} target="_blank" rel="noreferrer">
-              <i className="fas fa-external-link-square-alt"></i>
-            </a>
-          </div>
-
-          {/* PROJECT DESCRIPTION & TECH TAGS */}
-          <p>{projects[3].description}</p>
-          <div className="tags-container">
-            {projects[3].tags.map((tag, j) => {
-              return (
-                <span key={j} className="badge bg-warning card-tags">
-                  {tag}
-                </span>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* end card 4 */}
+        );
+      })}
     </div>
   );
 }
