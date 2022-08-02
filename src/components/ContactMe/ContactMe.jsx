@@ -9,7 +9,7 @@ function ContactMe() {
 
       {/* Button will open mail app to send to gmail */}
       <a href="mailto:jacobvernau@gmail.com">
-        <button type="button" className="btn btn-outline-warning">
+        <button type="button" className="btn btn-outline-light">
           <span>
             <i id="buttonID" className="far fa-envelope-open button-icon"></i>
           </span>

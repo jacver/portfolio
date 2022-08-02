@@ -14,13 +14,13 @@ function Content() {
       {/* biography section */}
 
       <p>
-        A <span className="text-warning">full-stack software engineer</span>,
+        A <span className="text-light">full-stack software engineer</span>,
         mental health counselor, and skier. Prior to working with software
         development, I obtained a Master's Degree in Counseling from Clemson
         University. Whether I'm working with humans or computers, I've always
         been passionate about{" "}
-        <span className="text-warning">solving problems</span> and{" "}
-        <span className="text-warning">learning</span> as much as possible.
+        <span className="text-light">solving problems</span> and{" "}
+        <span className="text-light">learning</span> as much as possible.
       </p>
 
       {/* social media link container */}
@@ -32,7 +32,7 @@ function Content() {
           className="icon linkedin"
           rel="noreferrer"
         >
-          <button type="button" className="btn btn-outline-warning">
+          <button type="button" className="btn btn-outline-light">
             <span>
               <i className="fab fa-linkedin icon-intro"></i>
             </span>
@@ -45,7 +45,7 @@ function Content() {
           className="icon github"
           rel="noreferrer"
         >
-          <button type="button" className="btn btn-outline-warning">
+          <button type="button" className="btn btn-outline-light">
             <span>
               <i className="fab fa-github icon-intro"></i>
             </span>

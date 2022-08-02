@@ -16,25 +16,25 @@ function AboutBio() {
         that came with working in alternative, low-income, and international
         settings. My experiences in schools have given me a wealth of knowledge
         in
-        <span className="text-warning"> leading teams, communication, </span>
+        <span className="text-light"> leading teams, communication, </span>
         and
-        <span className="text-warning"> account management</span>.
+        <span className="text-light"> account management</span>.
       </p>
       <p>
-        My passion for <span className="text-warning">web development</span>{" "}
-        began in the Summer of 2021. I proposed to my now-wife and started to
-        explore template-based services to build our wedding website. As I
-        mocked things up, built them, scrapped them, and did it all again I
-        found myself wondering how everything worked behind the scenes. With
-        recommendations from friends in software engineering, I began a course
-        on Udemy in <span className="text-warning">Javacsript, HTML, </span>
-        and <span className="text-warning">CSS</span>. I instantly fell in love
+        My passion for <span className="text-light">web development</span> began
+        in the Summer of 2021. I proposed to my now-wife and started to explore
+        template-based services to build our wedding website. As I mocked things
+        up, built them, scrapped them, and did it all again I found myself
+        wondering how everything worked behind the scenes. With recommendations
+        from friends in software engineering, I began a course on Udemy in{" "}
+        <span className="text-light">Javacsript, HTML, </span>
+        and <span className="text-light">CSS</span>. I instantly fell in love
         and spent virtually all of my freetime doing the coursework. After a
         month of that I decided to build my first project from scratch - our
         wedding website. I had a blast building the site and refactoring it as I
         learned. In the Winter of 2021, I was still craving more so I enrolled
         in General Assembly's six month{" "}
-        <span className="text-warning">software engineering immersive</span>{" "}
+        <span className="text-light">software engineering immersive</span>{" "}
         course.
       </p>
     </div>

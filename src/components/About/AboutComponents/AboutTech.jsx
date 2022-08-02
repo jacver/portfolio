@@ -20,35 +20,35 @@ function AboutTech() {
       <div className="tech-row-container">
         <ul>
           {" "}
-          <span className="text-warning"> Languages</span>
+          <span className="text-light"> Languages</span>
           {tech.languages.map((item, i) => {
             return <li key={i}>{item}</li>;
           })}
         </ul>
         <ul>
           {" "}
-          <span className="text-warning"> Databases</span>
+          <span className="text-light"> Databases</span>
           {tech.databases.map((item, i) => {
             return <li key={i}>{item}</li>;
           })}
         </ul>{" "}
         <ul>
           {" "}
-          <span className="text-warning"> Frameworks/Libraries</span>
+          <span className="text-light"> Frameworks/Libraries</span>
           {tech.frameworks.map((item, i) => {
             return <li key={i}>{item}</li>;
           })}
         </ul>
         <ul>
           {" "}
-          <span className="text-warning"> Cloud</span>
+          <span className="text-light"> Cloud</span>
           {tech.cloud.map((item, i) => {
             return <li key={i}>{item}</li>;
           })}
         </ul>{" "}
         <ul>
           {" "}
-          <span className="text-warning">Other Skills</span>
+          <span className="text-light">Other Skills</span>
           {tech.other.map((item, i) => {
             return <li key={i}>{item}</li>;
           })}

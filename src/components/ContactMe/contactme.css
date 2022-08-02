@@ -6,9 +6,9 @@
 
 /* font awesome icons */
 .btn i {
-  color: #cb4b16;
+  color: white;
 }
 
 .btn:hover i {
-  color: white;
+  color: black;
 }

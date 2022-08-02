@@ -51,7 +51,7 @@ function TopNavbar() {
                 href="https://docs.google.com/document/d/16bOtF7reWw2IHdM6CDNJbwEYCmzCy-Qz_R5VHmXOa6I/export?format=pdf"
                 download="Jacob Vernau Resume.pdf"
               >
-                <button type="button" className="btn btn-outline-warning">
+                <button type="button" className="btn btn-outline-light">
                   <span>
                     <i className="fas fa-download"></i>
                   </span>
